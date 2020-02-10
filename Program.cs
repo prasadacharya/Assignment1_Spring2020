@@ -164,9 +164,14 @@ namespace Assignment1_Spring2020
                 String time24 = date12.ToString("HH:mm:ss"); // converted time to 24 hour format
                 int seconds = (int)TimeSpan.Parse(time24).TotalSeconds; // calculated total seconds
 
-                int h = (seconds / 2700);   // calculated hour(h) = total seconds/number of seconds in each USF hour(60*45)
-                int m = (seconds - (2700 * h)) / 45; // calculated minutes(m) = (total seconds - total number of hours in seconds(2700 * h))/ number of seconds in each minute
-                int sec = (seconds - (2700 * h) - (m * 45)); // calculated seconds = total seconds - total number of hours in seconds(2700 * h) - total number of minutes in seconds(m * 45)
+                // calculated hour(h) = total seconds/number of seconds in each USF hour(60*45)
+                int h = (seconds / 2700);
+
+                // calculated minutes(m) = (total seconds - total number of hours in seconds(2700 * h)) / number of seconds in each minute
+                int m = (seconds - (2700 * h)) / 45;
+
+                // calculated seconds = total seconds - total number of hours in seconds(2700 * h) - total number of minutes in seconds(m * 45)
+                int sec = (seconds - (2700 * h) - (m * 45)); 
 
                 String time36 = h.ToString()+":"+m.ToString()+":"+sec.ToString(); // converted h,m,sec to Usf format Time string 
                 return time36;            // returned UsfTime string   
@@ -188,8 +193,8 @@ namespace Assignment1_Spring2020
         {
             try
             {
-              /*Logic: This method will check all conditions using "if-else if-else" loops and print Usf Numbers accordingly from 1 to 110, 
-               *11 numbers per line. Used modulo operation to find out numbers multiple of 3, 5 and 7. Line by Line logic provided below */
+              /*Logic:This method will check all conditions using "if-else if-else" loops and print Usf Numbers accordingly from 1 to 110, 
+               *11 numbers per line. Used modulo operation to find out numbers multiple of 3, 5 and 7.Line by Line logic provided below */
 
                 for (int i = 1; i <= n3; i++)
                 {
@@ -270,7 +275,8 @@ namespace Assignment1_Spring2020
                                 revs += str[k];
                             }// end of for loop
 
-                            if (revs == str) //Checking whether String "str" is palindrome or not by comparing it with reverse of that String "revs"
+                            //Checking whether String "str" is palindrome or not by comparing it with reverse of that String "revs"
+                            if (revs == str) 
                             {
                                 Console.Write("[{0} {1}]", i, j);
                             }// end of inner if
