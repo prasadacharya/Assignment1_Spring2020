@@ -170,7 +170,7 @@ namespace Assignment1_Spring2020
                 // calculated minutes(m) = (total seconds - total number of hours in seconds(2700 * h)) / number of seconds in each minute
                 int m = (seconds - (2700 * h)) / 45;
 
-                // calculated seconds = total seconds - total number of hours in seconds(2700 * h) - total number of minutes in seconds(m * 45)
+                //calculated seconds = total seconds-total number of hours in seconds(2700 * h)-total number of minutes in seconds(m * 45)
                 int sec = (seconds - (2700 * h) - (m * 45)); 
 
                 String time36 = h.ToString()+":"+m.ToString()+":"+sec.ToString(); // converted h,m,sec to Usf format Time string 
