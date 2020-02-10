@@ -188,8 +188,8 @@ namespace Assignment1_Spring2020
         {
             try
             {
-                /*Logic: This method will check all conditions using "if-else if-else" loops and print Usf Numbers accordingly from 1 to 110, 11 numbers per line.
-                 * Used modulo operation to find out numbers multiple of 3, 5 and 7. Line by Line logic provided below */
+              /*Logic: This method will check all conditions using "if-else if-else" loops and print Usf Numbers accordingly from 1 to 110, 
+               *11 numbers per line. Used modulo operation to find out numbers multiple of 3, 5 and 7. Line by Line logic provided below */
 
                 for (int i = 1; i <= n3; i++)
                 {
@@ -249,8 +249,9 @@ namespace Assignment1_Spring2020
             try
             {
 
-                /*Logic :Concatenate 2 different words from given array. Check if the concatenation of two words is a palindrome by comparing string "str" with reverse of that string "revs".
-                 *       If they are same that means string is palindrome hence printing indices of those two words. Repeat the same for all different pairs */
+             /*Logic :Concatenate 2 different words from given array. Check if the concatenation of two words is a palindrome by 
+              * comparing string "str" with reverse of that string "revs".If they are same that means string is palindrome hence 
+              * printing indices of those two words. Repeat the same for all different pairs */
 
                 int n = words.Length; // to get the length of the array
 
@@ -293,8 +294,9 @@ namespace Assignment1_Spring2020
        {
            try
            {
-                /* Logic 1:  You(Player 1) cannot win this stone game if the number of stones in the bag is divisible by 4. Because No matter 1,2 or 3 stones you(Player 1) take out, 
-                 * the last stone will always be removed by Player 2. It is obvious that the same pattern repeats itself for n=4,8,12,16,…, basically all multiples of 4 
+                /* Logic 1:  You(Player 1) cannot win this stone game if the number of stones in the bag is divisible by 4. 
+                 * Because No matter 1,2 or 3 stones you(Player 1) take out, the last stone will always be removed by Player 2. 
+                 * It is obvious that the same pattern repeats itself for n=4,8,12,16,…, basically all multiples of 4. 
                  * Assumption: Both players are very clever and have optimal strategies for the game. */
 
                 if (n4 % 4 == 0)
@@ -302,15 +304,18 @@ namespace Assignment1_Spring2020
                     Console.WriteLine("False(You cannot win the game)");
                 }//end of if
 
-                /* Logic 2:  You(Player 1) will win the game if the number of stones in the bag is less than 4. Because you can take out 1,2 or 3 stones in your first move */
+                /* Logic 2:  You(Player 1) will win the game if the number of stones in the bag is less than 4. 
+                 * Because you can take out 1,2 or 3 stones in your first move */
 
                 else if (n4 < 4)
                 {
                     Console.WriteLine("You win the game. Your first move " + n4);
                 }//end of else if
 
-                /* Logic 3: You(Player 1) can win the game if the number of stones in the bag is more than 4. In First move take out (n4 % 4) stones. Then player 2 picks up 1 or 2 or 3 stones.
-                 * Repeat the same. Player 2 will never win the game because no matter 1,2 or 3 stones he takes out, you will the one to take out the last stone. */
+                /* Logic 3: You(Player 1) can win the game if the number of stones in the bag is more than 4. 
+                 * In First move take out (n4 % 4) stones. Then player 2 picks up 1 or 2 or 3 stones. Repeat the same. 
+                 * Player 2 will never win the game because no matter 1,2 or 3 stones he takes out, you will the one to take 
+                 * out the last stone. */
 
                 else
                 {
