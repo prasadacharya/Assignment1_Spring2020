@@ -14,13 +14,13 @@ namespace Assignment1_Spring2020
         {
             Console.WriteLine("This method prints number pattern of integers using recursion");
             int n = 5;
-            //int n = 14;
+            //int n = 10;
             PrintPattern(n);
             Console.WriteLine();
 
             Console.WriteLine("This method prints the series till n terms");
             int n2 = 6;
-            //int n2 = 14;
+            //int n2 = 11;
             PrintSeries(n2);
             Console.WriteLine();
             Console.WriteLine();
@@ -46,8 +46,8 @@ namespace Assignment1_Spring2020
             Console.WriteLine();
 
             Console.WriteLine("This method prints the stone game result");
-            //int n4 = 4;
-            int n4 = 16;
+            int n4 = 4;
+            //int n4 = 5;
             //Console.WriteLine("Enter number of stones:");
             //int n4 = Convert.ToInt32(Console.ReadLine());
             Stones(n4);
